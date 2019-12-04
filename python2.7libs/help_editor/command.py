@@ -157,7 +157,7 @@ def get_help_file_text(help_file, splitlines=True):
         ヘルプファイルの文字列。
         splitlinesがTrueなら行ごとの文字列が入ったリスト。
     """
-    if not help_file or not os.path.exists(help_file):
+    if not help_file:
         if splitlines:
             return []
         return ''
@@ -173,6 +173,10 @@ def get_help_file_text(help_file, splitlines=True):
                 if splitlines:
                     lines = lines.splitlines()
     else:
+        if not os.path.exists(help_file):
+            if splitlines:
+                return []
+            return ''
         with codecs.open(help_file, 'r', 'utf-8') as f:
             lines = f.readlines()
             if not splitlines:
