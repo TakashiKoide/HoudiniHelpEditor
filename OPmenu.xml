@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menuDocument>
+  <menu>
+    <scriptItem id="help_editor">
+    <insertAfter>opmenu.help</insertAfter>
+    <label>Edit Node Help</label>
+    <scriptCode><![CDATA[
+from help_editor import main_ui
+reload(main_ui)
+items = kwargs['items']
+node_types = [item.type() for item in items]
+ui = main_ui.MainWindow(node_types)
+ui.show_window()
+]]></scriptCode>
+    </scriptItem>
+  </menu>
+</menuDocument>
