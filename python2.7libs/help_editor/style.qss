@@ -1,0 +1,193 @@
+QWidget
+{
+    font-family: "メイリオ";
+    font-size: 12px;
+    color: black;
+    outline: none;
+    margin: 0;
+    background-color: white;
+}
+
+QTabBar::tab
+{
+    width: 160px;
+    height: 32px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: lightgray;
+}
+
+QTabBar::tab:selected
+{
+    background: white;
+}
+
+QFrame
+{
+    color: rgb(128, 128, 128)
+}
+
+QTextEdit
+{
+    color: black;
+    font-size: 14px;
+    spacing: 30px;
+    background: rgb(236, 236, 236);
+    border: 1px solid rgb(100, 100, 100);
+}
+
+QMenu
+{
+    background-color: rgb(40, 40, 40);
+    font-size: 13px;
+    border: 1px solid black
+}
+
+QMenu::item:selected:!disabled
+{
+    background-color: rgb(0, 121, 158);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+QScrollBar:vertical
+{
+    border: none;
+    background: rgb(241,241,241);
+    width: 15px;
+    margin: 17px 0 17px 0;
+}
+
+QScrollBar::handle:vertical
+{
+    background: rgb(193, 193, 193);
+    min-height: 30px;
+}
+
+QScrollBar::add-line:vertical
+{
+    border: 1px solid white;
+    background: rgb(241, 241, 241);
+    height: 15px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical
+{
+    border: 1px solid white;
+    background: rgb(241, 241, 241);
+    height: 15px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:vertical
+{
+    width: 0;
+    height: 0;
+    border-left: 3px solid rgba(86, 86, 86, 0);
+    border-right: 3px solid rgba(86, 86, 86, 0);
+    border-bottom: 5px solid rgb(131, 131, 131);
+}
+
+QScrollBar::down-arrow:vertical
+{
+    width: 0;
+    height: 0;
+    border-left: 3px solid rgba(86, 86, 86, 0);
+    border-right: 3px solid rgba(86, 86, 86, 0);
+    border-top: 5px solid rgb(131, 131, 131);
+}
+
+QTableView
+{
+    font-size: 16px;
+    color: black;
+    background: white;
+    border: none
+}
+QTableView::item
+{
+    color: black;
+    background: white;
+    border: 1px solid white
+}
+
+QHeaderView
+{
+    font-size: 14px;
+    font-weight: bold;
+    border: none
+}
+
+QHeaderView::section
+{
+    color: white;
+    border: 1px solid white;
+    padding: 4px;
+    background: rgb(242, 242, 242);
+}
+
+QLabel
+{
+    color: black;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0);
+}
+
+QLabel#NodeTypeLabel
+{
+    font-size: 24px;
+    font-weight: 1000;
+}
+
+QLabel#CategoryLabel
+{
+    font-size: 24px;
+}
+
+QPushButton
+{
+    color: rgb(88, 164, 255);
+    font-weight: 1000;
+    border: 1px solid rgb(88, 164, 255);
+    background: rgba(0, 0, 0, 0);
+}
+
+QPushButton:hover
+{
+    color: white;
+    background-color: rgb(88, 164, 255);
+}
+
+QPushButton#LaunchButton
+{
+    color: rgb(153, 153, 153);
+    border: 1px solid rgb(153, 153, 153);
+}
+
+QPushButton#LaunchButton:hover
+{
+    color: white;
+    background-color: rgb(153, 153, 153);
+}
+
+QMenu::item
+{
+    padding: 2px 25px 2px 20px;border: 1px solid transparent;
+}
+
+QMenu::icon
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+QSplitter::handle
+{
+    background: rgba(0, 0, 0, 0)
+}
